@@ -3,7 +3,7 @@ import { Outlet } from "react-router-dom";
 import SideBar from "../components/SideBar";
 import Header from "../components/Header";
 
-export default function DefaultLayout() {
+const DefaultLayout: React.FC = () => {
   return (
     <>
       <div className="w-screen h-screen fixed">
@@ -17,4 +17,5 @@ export default function DefaultLayout() {
       </div>
     </>
   );
-}
+};
+export default DefaultLayout;
