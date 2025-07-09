@@ -14,6 +14,7 @@
   --color-danger: #dc3545;
   --color-warning: #ffc107;
 
-  --spacing-hheader-sm: 3rem;
-  --spacing-hheader-md: 4rem;
+  --spacing-hheader: 4rem;
+  --spacing-hsidebar: 4rem;
+  --spacing-wsidebar: 6rem;
 }

@@ -25,10 +25,10 @@ const Header: React.FC = () => {
     };
   }, []);
   return (
-    <header className=" flex w-screen bg-primary">
-      <div className="flex h-hheader-sm md:h-hheader-md justify-between w-full items-center mx-4 md:mx-8">
+    <header className=" fixed top-0 left-0 right-0  border-b-1 border-gray-300">
+      <div className="flex h-hheader justify-between  items-center mx-4 md:mx-8">
         <div>
-          <img src="/vite.svg" className="h-8" />
+          <img src="/HL.png" className="h-10" />
         </div>
         <div className="flex items-center gap-x-2 md:gap-x-4">
           <div className="relative">
