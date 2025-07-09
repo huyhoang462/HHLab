@@ -1,6 +1,7 @@
 import { Globe, Moon, Palette, Sun } from "lucide-react";
 import React, { useEffect, useRef, useState } from "react";
 import { useTheme } from "../hooks/useTheme";
+import { useTranslation } from "react-i18next";
 
 const Header: React.FC = () => {
   const [isShowLanguageMenu, setIsShowLanguageMenu] = useState(false);
@@ -8,6 +9,14 @@ const Header: React.FC = () => {
 
   const langRef = useRef<HTMLDivElement>(null);
   const themeRef = useRef<HTMLDivElement>(null);
+
+  const { t, i18n } = useTranslation();
+  console.log("Ngôn ngữ i18n hiện tại là:", i18n.language);
+
+  const handleChangeLanguage = (lang: "en" | "vi") => {
+    i18n.changeLanguage(lang);
+    setIsShowLanguageMenu(false);
+  };
 
   const { theme, setTheme } = useTheme();
   const handleThemeChange = (selectedTheme: "light" | "dark") => {
@@ -49,11 +58,29 @@ const Header: React.FC = () => {
             {isShowLanguageMenu && (
               <div
                 ref={langRef}
-                className="absolute top-8 right-0  bg-background rounded-sm p-2 shadow-sm"
+                className="absolute top-8 right-0 w-32  bg-surface rounded-md p-2 shadow-sm"
               >
                 <div className="font-medium flex flex-col gap-y-2">
-                  <button className="px-2 cursor-pointer">EN</button>
-                  <button className="px-2 cursor-pointer">VI</button>
+                  <button
+                    onClick={() => handleChangeLanguage("en")}
+                    className={`px-2 py-1 cursor-pointer  hover:bg-primary/10 rounded-md ${
+                      i18n.language === "en"
+                        ? "text-primary"
+                        : "text-text-primary"
+                    }`}
+                  >
+                    {t("global.header.languages.en")}
+                  </button>
+                  <button
+                    onClick={() => handleChangeLanguage("vi")}
+                    className={`px-2 py-1 cursor-pointer  hover:bg-primary/10 rounded-md ${
+                      i18n.language === "vi"
+                        ? "text-primary"
+                        : "text-text-primary"
+                    }`}
+                  >
+                    {t("global.header.languages.vi")}
+                  </button>
                 </div>
               </div>
             )}
@@ -68,7 +95,7 @@ const Header: React.FC = () => {
             {isShowThemeMenu && (
               <div
                 ref={themeRef}
-                className="absolute top-8 right-0  bg-background rounded-sm p-2 shadow-sm"
+                className="absolute top-8 right-0  bg-surface rounded-md p-2 shadow-sm"
               >
                 <div className="font-medium flex flex-col gap-y-2">
                   <button

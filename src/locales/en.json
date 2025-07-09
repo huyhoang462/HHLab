@@ -1,0 +1,31 @@
+{
+  "global": {
+    "nav": {
+      "home": "Home",
+      "todo": "Todo",
+      "pomodoro": "Pomodoro"
+    },
+    "header": {
+      "switch_language": "Switch Language",
+      "switch_theme": "Switch Theme",
+      "themes": {
+        "light": "Light",
+        "dark": "Dark"
+      },
+      "languages": {
+        "en": "English",
+        "vi": "Vietnamese"
+      }
+    },
+    "buttons": {
+      "save": "Save",
+      "cancel": "Cancel",
+      "delete": "Delete",
+      "add_new": "Add New"
+    },
+    "common": {
+      "loading": "Loading...",
+      "error_occurred": "An error occurred. Please try again."
+    }
+  }
+}

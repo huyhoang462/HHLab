@@ -1,0 +1,31 @@
+{
+  "global": {
+    "nav": {
+      "home": "Trang chủ",
+      "todo": "Nhiệm vụ",
+      "pomodoro": "Pomodoro"
+    },
+    "header": {
+      "switch_language": "Switch Language",
+      "switch_theme": "Switch Theme",
+      "themes": {
+        "light": "Sáng",
+        "dark": "Tối"
+      },
+      "languages": {
+        "en": "Tiếng Anh",
+        "vi": "Tiếng Việt"
+      }
+    },
+    "buttons": {
+      "save": "Lưu",
+      "cancel": "Hủy",
+      "delete": "Xóa",
+      "add_new": "Thêm"
+    },
+    "common": {
+      "loading": "Đang tải...",
+      "error_occurred": "Xảy ra lỗi. Vui lòng thử lại."
+    }
+  }
+}

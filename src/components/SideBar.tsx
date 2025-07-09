@@ -1,27 +1,29 @@
 import { Hamburger, House, ListTodo } from "lucide-react";
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 const SideBar: React.FC = () => {
   type NavItem = {
     path: string;
-    name: string;
+    nameKey: string;
     icon: React.ReactElement;
   };
-  const iconClass: string = "h-5 md:h-6 ";
+  const iconClass: string = "h-6 ";
+  const { t } = useTranslation();
   const navItems: NavItem[] = [
     {
       path: "/",
-      name: "Home",
+      nameKey: "global.nav.home",
       icon: <House className={iconClass} />,
     },
     {
       path: "/todo",
-      name: "Todo",
+      nameKey: "global.nav.todo",
       icon: <ListTodo className={iconClass} />,
     },
     {
       path: "/pomodoro",
-      name: "Pomo",
+      nameKey: "global.nav.pomodoro",
       icon: <Hamburger className={iconClass} />,
     },
   ];
@@ -31,9 +33,10 @@ const SideBar: React.FC = () => {
         <NavLink
           to={item.path}
           key={item.path}
+          title={t(item.nameKey)}
           className={({
             isActive,
-          }) => `flex flex-col items-center rounded-lg w-14 h-14 md:w-20 md:h-20 justify-center hover:bg-surface-hover
+          }) => `flex flex-col items-center rounded-lg whitespace-nowrap w-14 h-14 md:w-20 md:h-20 justify-center hover:text-text-primary md:hover:bg-surface-hover
             ${
               isActive
                 ? " text-text-primary font-medium  bg-surface-hover "
@@ -41,7 +44,7 @@ const SideBar: React.FC = () => {
             }`}
         >
           {item.icon}
-          {item.name}
+          <span className="hidden md:flex">{t(item.nameKey)}</span>
         </NavLink>
       ))}
     </aside>
