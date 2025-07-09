@@ -26,17 +26,17 @@ const SideBar: React.FC = () => {
     },
   ];
   return (
-    <aside className="flex justify-around border-t-1 border-gray-300 items-center h-full w-full md:flex-col md:gap-y-8 md:pt-10 md:justify-start md:items-center">
+    <aside className="flex justify-around border-t-1 border-border items-center h-full w-full md:flex-col md:gap-y-8 md:pt-10 md:justify-start md:items-center">
       {navItems.map((item) => (
         <NavLink
           to={item.path}
           key={item.path}
           className={({
             isActive,
-          }) => `flex flex-col items-center rounded-lg w-14 h-14 md:w-20 md:h-20 justify-center hover:bg-gray-200
+          }) => `flex flex-col items-center rounded-lg w-14 h-14 md:w-20 md:h-20 justify-center hover:bg-surface-hover
             ${
               isActive
-                ? " text-text-primary font-medium  bg-gray-200 "
+                ? " text-text-primary font-medium  bg-surface-hover "
                 : "text-text-secondary"
             }`}
         >
