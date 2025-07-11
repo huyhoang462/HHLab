@@ -4,12 +4,14 @@ import Home from "./pages/home";
 import Todo from "./pages/Todo";
 import Pomodoro from "./pages/Pomodoro/Pomodoro";
 import NotFound from "./pages/NotFound";
+import HomeLayout from "./layouts/HomeLayout";
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <Routes>
+          <Route element={<HomeLayout />}></Route>
           <Route element={<DefaultLayout />}>
             <Route element={<Home />} path="/" />
             <Route element={<Todo />} path="/todo" />

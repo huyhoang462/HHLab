@@ -15,7 +15,9 @@
       "languages": {
         "en": "Tiếng Anh",
         "vi": "Tiếng Việt"
-      }
+      },
+      "log_out": "Đăng xuất",
+      "log_out_description": "Hành động này sẽ xóa toàn bộ dữ liệu. Tiếp tục chứ?"
     },
     "buttons": {
       "save": "Lưu",
@@ -26,6 +28,15 @@
     "common": {
       "loading": "Đang tải...",
       "error_occurred": "Xảy ra lỗi. Vui lòng thử lại."
+    }
+  },
+  "page": {
+    "home": {
+      "hello": "Xin chào! Tên bạn là gì?",
+      "continue": "Tiếp tục",
+      "morning": "Chào buổi sáng",
+      "afternoon": "Chào buổi chiều",
+      "evening": "Chào buổi tối"
     }
   }
 }

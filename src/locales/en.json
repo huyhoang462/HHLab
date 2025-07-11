@@ -15,7 +15,9 @@
       "languages": {
         "en": "English",
         "vi": "Vietnamese"
-      }
+      },
+      "log_out": "Log out",
+      "log_out_description": "This action will delete all your data. Continue?"
     },
     "buttons": {
       "save": "Save",
@@ -26,6 +28,15 @@
     "common": {
       "loading": "Loading...",
       "error_occurred": "An error occurred. Please try again."
+    }
+  },
+  "page": {
+    "home": {
+      "hello": "Hello! What's your name?",
+      "continue": "Continue",
+      "morning": "Good morning",
+      "afternoon": "Good afternoon",
+      "evening": "Good evening"
     }
   }
 }

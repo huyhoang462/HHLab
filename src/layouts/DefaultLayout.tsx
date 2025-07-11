@@ -9,11 +9,11 @@ const DefaultLayout: React.FC = () => {
       <div className=" flex flex-col bg-background h-screen relative">
         <Header />
         <div className="flex flex-1 overflow-hidden">
-          <div className="fixed h-hsidebar bottom-0 left-0 right-0 md:flex md:h-full md:w-wsidebar md:right-auto  md:top-hheader ">
+          <div className="fixed z-30 h-hsidebar bottom-0 left-0 right-0 md:flex md:h-full md:w-wsidebar md:right-auto  md:top-hheader ">
             <SideBar />
           </div>
           <main className="  pt-hheader pb-hsidebar md:pb-0 md:pl-wsidebar ">
-            <div className="h-[2000px]">
+            <div className="">
               <Outlet />
             </div>
           </main>
