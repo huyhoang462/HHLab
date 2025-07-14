@@ -12,10 +12,8 @@ const DefaultLayout: React.FC = () => {
           <div className="fixed z-30 h-hsidebar bottom-0 left-0 right-0 md:flex md:h-full md:w-wsidebar md:right-auto  md:top-hheader ">
             <SideBar />
           </div>
-          <main className="  pt-hheader pb-hsidebar md:pb-0 md:pl-wsidebar ">
-            <div className="">
-              <Outlet />
-            </div>
+          <main className="  pt-hheader pb-hsidebar md:pb-0 md:pl-wsidebar w-full ">
+            <Outlet />
           </main>
         </div>
       </div>

@@ -36,10 +36,10 @@ const SideBar: React.FC = () => {
           title={t(item.nameKey)}
           className={({
             isActive,
-          }) => `flex flex-col items-center rounded-lg whitespace-nowrap w-14 h-14 md:w-20 md:h-20 justify-center hover:text-text-primary hover:scale-105
+          }) => `flex flex-col items-center rounded-lg whitespace-nowrap w-14 h-14 md:w-20 md:h-20 justify-center  hover:text-text-primary hover:scale-105
             ${
               isActive
-                ? " text-text-primary font- scale-105 -translate-y-0.5 "
+                ? " text-text-primary font- scale-105 -translate-y-0.5 bg-surface-hover/50 "
                 : "text-text-secondary"
             } `}
         >

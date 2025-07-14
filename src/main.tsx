@@ -5,6 +5,8 @@ import "./i18n.ts";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import "./index.css";
 import { ThemeProvider } from "./contexts/ThemeContext.tsx";
+import { store } from "./stores/store.ts";
+import { Provider } from "react-redux";
 
 const queryClinet = new QueryClient({
   defaultOptions: {
@@ -16,10 +18,12 @@ const queryClinet = new QueryClient({
 });
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <ThemeProvider>
-      <QueryClientProvider client={queryClinet}>
-        <App />
-      </QueryClientProvider>
-    </ThemeProvider>
+    <Provider store={store}>
+      <ThemeProvider>
+        <QueryClientProvider client={queryClinet}>
+          <App />
+        </QueryClientProvider>
+      </ThemeProvider>
+    </Provider>
   </StrictMode>
 );

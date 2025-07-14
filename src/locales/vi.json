@@ -20,10 +20,11 @@
       "log_out_description": "Hành động này sẽ xóa toàn bộ dữ liệu. Tiếp tục chứ?"
     },
     "buttons": {
+      "add": "Thêm",
       "save": "Lưu",
       "cancel": "Hủy",
       "delete": "Xóa",
-      "add_new": "Thêm"
+      "close": "Đóng"
     },
     "common": {
       "loading": "Đang tải...",
@@ -37,6 +38,20 @@
       "morning": "Chào buổi sáng",
       "afternoon": "Chào buổi chiều",
       "evening": "Chào buổi tối"
+    },
+    "todo": {
+      "add_placeholder": "Nhập tên danh mục...",
+      "add_todo": "Thêm việc",
+      "add_new_task_title": "Thêm công việc mới",
+      "task_name": "Tên công việc",
+      "task_name_placeholder": "VD: Làm việc nhà",
+      "deadline": "Hạn chót",
+      "add_new_task_button": "Thêm công việc",
+      "create_new_category": "Tạo danh mục mới",
+      "create_category_desc": "Sắp xếp công việc của bạn bằng cách tạo một danh sách mới.",
+      "category_name_placeholder": "VD: Dự án cá nhân",
+      "create_button": "Tạo danh mục",
+      "no_tasks": "Chưa có công việc nào."
     }
   }
 }

@@ -17,8 +17,6 @@ const Home: React.FC = () => {
     });
   }, [time]);
   const handleChangeName = (e: React.ChangeEvent<HTMLInputElement>) => {
-    console.log(e.target.value);
-
     setName(e.target.value);
   };
   const handleContinue = () => {

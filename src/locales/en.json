@@ -20,10 +20,11 @@
       "log_out_description": "This action will delete all your data. Continue?"
     },
     "buttons": {
-      "save": "Save",
-      "cancel": "Cancel",
+      "add": "Add",
       "delete": "Delete",
-      "add_new": "Add New"
+      "save": "Save",
+      "close": "Close",
+      "cancel": "Cancel"
     },
     "common": {
       "loading": "Loading...",
@@ -37,6 +38,20 @@
       "morning": "Good morning",
       "afternoon": "Good afternoon",
       "evening": "Good evening"
+    },
+    "todo": {
+      "add_placeholder": "Enter category name...",
+      "add_todo": "Add todo",
+      "add_new_task_title": "Add New Task",
+      "task_name": "Task Name",
+      "task_name_placeholder": "e.g., Do housework",
+      "deadline": "Deadline",
+      "add_new_task_button": "Add Task",
+      "create_new_category": "Create a New Category",
+      "create_category_desc": "Organize your tasks by creating a new list.",
+      "category_name_placeholder": "e.g., Personal Projects",
+      "create_button": "Create Category",
+      "no_tasks": "There is no task now."
     }
   }
 }
