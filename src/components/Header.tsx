@@ -36,9 +36,11 @@ const Header: React.FC = () => {
   };
 
   const handleConfirmLogout = () => {
-    console.log("Đang đăng xuất...");
-
     localStorage.removeItem("user");
+    localStorage.removeItem("todoState");
+    localStorage.removeItem("pomodoroSettings");
+    localStorage.setItem("theme", "light");
+
     nav("/");
     setIsLogoutModalOpen(false);
   };

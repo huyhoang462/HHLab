@@ -15,31 +15,30 @@
 
 **HH-Lab** is more than just a project; it's my personal development laboratory. It was born out of a desire to create a clean, focused, and highly personalized workspace that helps me stay productive, while also serving as a playground to experiment with and master modern frontend technologies.
 
-The name "HH-Lab" reflects this dual purpose:
-
-- **HH:** Stands for my name, marking this as my personal space.
-- **Lab:** Represents a laboratory where I can build, test, and refine features, applying best practices in architecture, state management, and UI/UX design.
-
-The core philosophy is to build a beautiful, functional, and performant application that I, myself, would love to use every day.
-
 ---
 
-## ✨ Core Features (Current & Planned)
+## ✨ Core Features
 
-This project is being built incrementally. The roadmap is structured to tackle different technical challenges at each stage.
+This project showcases a collection of key features built with modern React practices, focusing on clean code, component-based architecture, and a great user experience.
 
-| Status | Feature                   | Core Technologies & Concepts Practiced                    |
-| :----: | ------------------------- | --------------------------------------------------------- |
-|   ✅   | **Core Layout & Routing** | `React Router DOM`, Responsive Design with `Tailwind CSS` |
-|   ⏳   | **To-Do List**            | `Local Storage` for persistence, Component Logic          |
-|   ⏳   | **Pomodoro Timer**        | `useEffect` for timers, State management                  |
-|   ⏳   | **Global State System**   | `Redux Toolkit` for Theme (Light/Dark) & Language (EN/VI) |
-|  ...   |
+- **Responsive Layout & Routing:**
 
-**Legend:**
+  - Built a fully responsive user interface using **Tailwind CSS** that adapts seamlessly across mobile, tablet, and desktop screens.
+  - Implemented client-side routing with **React Router DOM** to create a smooth single-page application experience.
 
-- ✅: Completed
-- ⏳: In Progress
+- **To-Do List:**
+
+  - Managed the application's entire to-do state using **Redux Toolkit**, ensuring predictable state updates.
+  - Integrated with **Local Storage** to persist user data, so tasks are saved between sessions.
+
+- **Pomodoro Timer:**
+
+  - Engineered a functional Pomodoro timer with configurable work and break sessions to help users manage their focus.
+  - Utilized the `useEffect` hook to handle the timer's countdown logic and automatic session switching.
+
+- **Global Theming & Language:**
+  - Implemented a site-wide light/dark theme switcher using a custom hook built on top of **React's Context API**.
+  - Integrated **i18next** to provide multi-language support (English/Vietnamese), also managed via the Context API.
 
 ---
 

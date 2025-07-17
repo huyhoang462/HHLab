@@ -24,7 +24,9 @@
       "save": "Lưu",
       "cancel": "Hủy",
       "delete": "Xóa",
-      "close": "Đóng"
+      "close": "Đóng",
+      "start": "Bắt đầu",
+      "pause": "Dừng"
     },
     "common": {
       "loading": "Đang tải...",
@@ -52,6 +54,12 @@
       "category_name_placeholder": "VD: Dự án cá nhân",
       "create_button": "Tạo danh mục",
       "no_tasks": "Chưa có công việc nào."
+    },
+    "pomo": {
+      "break": "Nghỉ",
+      "round": "Vòng",
+      "setting": "Cài đặt",
+      "interval": "Lặp lại"
     }
   }
 }

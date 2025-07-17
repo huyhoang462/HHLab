@@ -24,7 +24,9 @@
       "delete": "Delete",
       "save": "Save",
       "close": "Close",
-      "cancel": "Cancel"
+      "cancel": "Cancel",
+      "start": "Start",
+      "pause": "Pause"
     },
     "common": {
       "loading": "Loading...",
@@ -52,6 +54,12 @@
       "category_name_placeholder": "e.g., Personal Projects",
       "create_button": "Create Category",
       "no_tasks": "There is no task now."
+    },
+    "pomo": {
+      "break": "Break",
+      "round": "Round",
+      "setting": "Setting",
+      "interval": "Interval"
     }
   }
 }
